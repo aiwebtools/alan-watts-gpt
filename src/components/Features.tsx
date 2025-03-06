@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Brain, Lightbulb, Compass, Infinity, Key, Flask } from 'lucide-react';
+import { Brain, Lightbulb, Compass, Infinity, Key, Beaker } from 'lucide-react';
 import GlassmorphicCard from './GlassmorphicCard';
 
 const features = [
@@ -31,7 +31,7 @@ const features = [
   {
     title: "Scientific Simulation",
     description: "Utilize Python for theoretical calculations and test hypotheses with advanced probability analysis.",
-    icon: Flask,
+    icon: Beaker,
     delay: 5,
   },
   {
