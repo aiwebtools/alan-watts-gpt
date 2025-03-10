@@ -6,6 +6,7 @@ import Features from '@/components/Features';
 import Testimonials from '@/components/Testimonials';
 import FAQ from '@/components/FAQ';
 import Footer from '@/components/Footer';
+import DisclaimerPopup from '@/components/DisclaimerPopup';
 
 const Index = () => {
   // Ensure the page starts at the top when loaded
@@ -21,6 +22,7 @@ const Index = () => {
       <Testimonials />
       <FAQ />
       <Footer />
+      <DisclaimerPopup />
     </div>
   );
 };
