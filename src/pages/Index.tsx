@@ -7,6 +7,7 @@ import Testimonials from '@/components/Testimonials';
 import FAQ from '@/components/FAQ';
 import Footer from '@/components/Footer';
 import DisclaimerPopup from '@/components/DisclaimerPopup';
+import ElevenLabsWidget from '@/components/ElevenLabsWidget';
 
 const Index = () => {
   // Ensure the page starts at the top when loaded
@@ -23,6 +24,7 @@ const Index = () => {
       <FAQ />
       <Footer />
       <DisclaimerPopup />
+      <ElevenLabsWidget />
     </div>
   );
 };

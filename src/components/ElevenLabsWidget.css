@@ -1,0 +1,21 @@
+
+/* Custom positioning for Eleven Labs widget */
+elevenlabs-convai {
+  position: fixed !important;
+  bottom: 20px !important;
+  right: 20px !important;
+  z-index: 9999 !important;
+}
+
+/* Custom styling for the widget bubble */
+elevenlabs-convai::part(bubble) {
+  background: linear-gradient(135deg, var(--cyberpunk-teal), var(--cyberpunk-blue)) !important;
+  box-shadow: 0 0 15px rgba(0, 240, 255, 0.5) !important;
+  border: 1px solid rgba(0, 240, 255, 0.3) !important;
+}
+
+/* Animation for the bubble */
+elevenlabs-convai::part(bubble):hover {
+  transform: scale(1.05) !important;
+  transition: transform 0.3s ease !important;
+}
