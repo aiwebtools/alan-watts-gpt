@@ -49,7 +49,7 @@ const FeatureCard = ({ feature, index }: { feature: typeof features[0], index: n
     <GlassmorphicCard 
       className="h-full transform transition-all duration-500 hover:scale-105 hover:shadow-magical" 
       hasNeonBorder={true} 
-      animateIn={true} 
+      animateIn={false}
       delay={delay as 1 | 2 | 3 | 4 | 5}
     >
       <div className="relative z-10 flex flex-col h-full p-2">
@@ -77,9 +77,9 @@ const Features = () => {
       
       <div className="container mx-auto px-4 md:px-6 relative z-10">
         <div className="text-center mb-20">
-          <p className="text-cyberpunk-teal text-sm font-medium uppercase tracking-wider mb-4 animate-fade-in">How it works</p>
+          <p className="text-cyberpunk-teal text-sm font-medium uppercase tracking-wider mb-4">How it works</p>
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-gradient mb-6 animate-neon-pulse">Expand Your Consciousness</h2>
-          <p className="text-muted-foreground text-lg md:text-xl max-w-3xl mx-auto leading-relaxed animate-fade-in delay-2">
+          <p className="text-muted-foreground text-lg md:text-xl max-w-3xl mx-auto leading-relaxed">
             Alan Watts GPT combines advanced AI with timeless philosophical wisdom to create a unique mind-expanding experience.
           </p>
         </div>

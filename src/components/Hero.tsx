@@ -35,17 +35,17 @@ const Hero = () => {
       
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex flex-col items-center justify-center text-center space-y-12 pt-16 md:pt-20">
-          <div className="animate-fade-in">
+          <div>
             <Logo size="large" className="mb-8 animate-glow" />
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tighter text-gradient leading-tight max-w-4xl mx-auto mb-6 animate-neon-pulse">
               Liberate Your Mind with Philosophical AI
             </h1>
-            <p className="text-xl md:text-2xl lg:text-3xl text-muted-foreground max-w-3xl mx-auto animate-fade-in-left" style={{ animationDelay: '0.3s' }}>
+            <p className="text-xl md:text-2xl lg:text-3xl text-muted-foreground max-w-3xl mx-auto">
               Explore various philosophical perspectives and engage in critical thinking exercises guided by Alan Watts' wisdom
             </p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full max-w-2xl mx-auto animate-fade-in delay-2">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full max-w-2xl mx-auto">
             <AnimatedButton 
               href="https://chatgpt.com/g/g-6781575cbb1881919ed8453766f5a750-alan-watts-gpt" 
               target="_blank" 
@@ -66,7 +66,7 @@ const Hero = () => {
             </AnimatedButton>
           </div>
           
-          <div className="w-full max-w-5xl mx-auto mt-12 animate-fade-in delay-3">
+          <div className="w-full max-w-5xl mx-auto mt-12">
             <div className="youtube-container relative">
               <iframe
                 ref={videoRef}
