@@ -47,17 +47,17 @@ const FeatureCard = ({ feature, index }: { feature: typeof features[0], index: n
   
   return (
     <GlassmorphicCard 
-      className="h-full" 
+      className="h-full transform transition-all duration-500 hover:scale-105 hover:shadow-magical" 
       hasNeonBorder={true} 
       animateIn={true} 
       delay={delay as 1 | 2 | 3 | 4 | 5}
     >
-      <div className="relative z-10 flex flex-col h-full">
-        <div className="mb-4 p-2 w-12 h-12 rounded-full bg-cyberpunk-teal/10 flex items-center justify-center">
-          <Icon className="h-6 w-6 text-cyberpunk-teal" />
+      <div className="relative z-10 flex flex-col h-full p-2">
+        <div className="mb-6 p-3 w-16 h-16 rounded-full bg-gradient-to-br from-cyberpunk-teal/20 to-cyberpunk-purple/20 flex items-center justify-center animate-glow">
+          <Icon className="h-8 w-8 text-cyberpunk-teal animate-pulse" />
         </div>
-        <h3 className="text-xl font-semibold mb-2 text-white">{title}</h3>
-        <p className="text-muted-foreground">{description}</p>
+        <h3 className="text-xl font-semibold mb-4 text-white text-gradient-blue">{title}</h3>
+        <p className="text-muted-foreground leading-relaxed">{description}</p>
       </div>
     </GlassmorphicCard>
   );
@@ -65,22 +65,26 @@ const FeatureCard = ({ feature, index }: { feature: typeof features[0], index: n
 
 const Features = () => {
   return (
-    <section id="features" className="relative py-20 overflow-hidden">
-      {/* Background Elements */}
-      <div className="absolute inset-0 cyber-grid-bg opacity-30 z-0"></div>
-      <div className="absolute top-1/4 -right-32 w-64 h-64 bg-cyberpunk-purple/20 rounded-full blur-3xl z-0"></div>
-      <div className="absolute bottom-1/4 -left-32 w-64 h-64 bg-cyberpunk-teal/20 rounded-full blur-3xl z-0"></div>
+    <section id="features" className="relative py-24 overflow-hidden">
+      {/* Enhanced Background Elements */}
+      <div className="absolute inset-0 cyber-grid-bg opacity-40 z-0"></div>
+      <div className="absolute top-1/4 -right-32 w-80 h-80 bg-gradient-to-br from-cyberpunk-purple/30 via-cyberpunk-pink/20 to-cyberpunk-teal/25 rounded-full blur-3xl z-0 animate-magical-float"></div>
+      <div className="absolute bottom-1/4 -left-32 w-96 h-96 bg-gradient-to-br from-cyberpunk-teal/30 via-cyberpunk-blue/25 to-cyberpunk-purple/20 rounded-full blur-3xl z-0 animate-float"></div>
+      
+      {/* Additional Ambient Effects */}
+      <div className="absolute top-10 left-1/4 w-24 h-24 bg-cyberpunk-pink/20 rounded-full blur-xl animate-pulse z-0"></div>
+      <div className="absolute bottom-10 right-1/4 w-32 h-32 bg-cyberpunk-teal/20 rounded-full blur-xl animate-glow z-0"></div>
       
       <div className="container mx-auto px-4 md:px-6 relative z-10">
-        <div className="text-center mb-12">
-          <p className="text-cyberpunk-teal text-sm font-medium uppercase tracking-wider mb-2">How it works</p>
-          <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-gradient mb-4">Expand Your Consciousness</h2>
-          <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
+        <div className="text-center mb-20">
+          <p className="text-cyberpunk-teal text-sm font-medium uppercase tracking-wider mb-4 animate-fade-in">How it works</p>
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-gradient mb-6 animate-neon-pulse">Expand Your Consciousness</h2>
+          <p className="text-muted-foreground text-lg md:text-xl max-w-3xl mx-auto leading-relaxed animate-fade-in delay-2">
             Alan Watts GPT combines advanced AI with timeless philosophical wisdom to create a unique mind-expanding experience.
           </p>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
           {features.map((feature, index) => (
             <FeatureCard key={index} feature={feature} index={index} />
           ))}

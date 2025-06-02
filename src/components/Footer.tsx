@@ -14,12 +14,22 @@ const Footer = () => {
 
   return (
     <footer className="relative py-12 overflow-hidden">
-      {/* Background Elements */}
-      <div className="absolute inset-0 cyber-grid-bg opacity-30"></div>
-      <div className="absolute bottom-0 -right-20 w-72 h-72 bg-cyberpunk-purple/20 rounded-full blur-3xl"></div>
+      {/* Enhanced Background Elements */}
+      <div className="absolute inset-0 cyber-grid-bg opacity-40 animate-pulse"></div>
+      <div className="absolute bottom-0 -right-20 w-96 h-96 bg-gradient-to-br from-cyberpunk-purple/30 via-cyberpunk-pink/20 to-cyberpunk-teal/30 rounded-full blur-3xl animate-float"></div>
+      <div className="absolute top-0 -left-20 w-80 h-80 bg-gradient-to-br from-cyberpunk-teal/25 via-cyberpunk-blue/20 to-cyberpunk-purple/25 rounded-full blur-3xl animate-glow"></div>
+      
+      {/* Small Disclaimer */}
+      <div className="container mx-auto px-4 md:px-6 mb-8">
+        <div className="glass-card p-4 mb-8 animate-fade-in neon-border">
+          <p className="text-center text-sm text-muted-foreground">
+            <span className="text-cyberpunk-teal font-medium">Educational & Research Purposes:</span> This content is provided for informational, educational, and research purposes only.
+          </p>
+        </div>
+      </div>
       
       <div id="disclaimer" className="container mx-auto px-4 md:px-6 mb-16">
-        <div className="glass-card p-6 mb-16 animate-fade-in">
+        <div className="glass-card p-6 mb-16 animate-fade-in neon-border shine-effect">
           <h3 className="text-2xl font-bold mb-4 text-white">Legal Disclaimer</h3>
           <div className="text-muted-foreground space-y-4 text-sm">
             <p>
@@ -111,7 +121,7 @@ const Footer = () => {
               </li>
               <li>
                 <AnimatedButton 
-                  href="https://aiwebtools.ai/terms-of-services" 
+                  href="https://aiwebtools.lovable.app/disclaimers" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   type="ghost"
@@ -175,7 +185,7 @@ const Footer = () => {
           <div className="mt-4 md:mt-0 flex items-center space-x-4">
             <button 
               onClick={scrollToTop}
-              className="p-2 rounded-full bg-cyberpunk-teal/10 text-cyberpunk-teal hover:bg-cyberpunk-teal/20 transition-colors"
+              className="p-2 rounded-full bg-cyberpunk-teal/10 text-cyberpunk-teal hover:bg-cyberpunk-teal/20 transition-colors animate-pulse"
               aria-label="Scroll to top"
             >
               <ChevronUp className="h-5 w-5" />
