@@ -5,38 +5,38 @@ import GlassmorphicCard from './GlassmorphicCard';
 
 const features = [
   {
-    title: "Critical Thinking Development",
-    description: "Engage in exercises that challenge established dogmas and expand your perspective through philosophical inquiry.",
+    title: "AI-Powered Critical Thinking",
+    description: "Advanced AI tool that challenges established thinking patterns through philosophical inquiry and consciousness expansion exercises.",
     icon: Brain,
     delay: 1,
   },
   {
-    title: "Multi-Perspective Analysis",
-    description: "Explore philosophical, scientific, and cultural viewpoints to gain a more comprehensive understanding of complex topics.",
+    title: "Multi-Perspective AI Analysis",
+    description: "Our AI web tool explores philosophical, scientific, and cultural viewpoints using cutting-edge artificial intelligence technology.",
     icon: Compass,
     delay: 2,
   },
   {
-    title: "Free Thought Liberation",
-    description: "Break free from conventional thinking patterns and discover new dimensions of consciousness and awareness.",
+    title: "Free AI Philosophy Tool",
+    description: "Break free from conventional thinking with this revolutionary AI tool designed for mind liberation and consciousness development.",
     icon: Key,
     delay: 3,
   },
   {
-    title: "Unbound Exploration",
-    description: "Push the boundaries of the norm through open-minded curiosity and philosophical experimentation.",
+    title: "Advanced AI Exploration",
+    description: "Push boundaries with our premium AI web tool that combines philosophical wisdom with modern artificial intelligence capabilities.",
     icon: Infinity,
     delay: 4,
   },
   {
-    title: "Scientific Simulation",
-    description: "Utilize Python for theoretical calculations and test hypotheses with advanced probability analysis.",
+    title: "AI-Enhanced Scientific Analysis",
+    description: "Utilize Python-powered AI calculations and advanced probability analysis within our comprehensive AI tools ecosystem.",
     icon: Beaker,
     delay: 5,
   },
   {
-    title: "Self-Discovery Journey",
-    description: "Unlock deeper understanding of yourself and reality through guided philosophical conversations.",
+    title: "AI-Guided Self-Discovery",
+    description: "Unlock deeper understanding through AI-powered philosophical conversations and consciousness-expanding AI technology.",
     icon: Lightbulb,
     delay: 5,
   },
@@ -77,17 +77,50 @@ const Features = () => {
       
       <div className="container mx-auto px-4 md:px-6 relative z-10">
         <div className="text-center mb-20">
-          <p className="text-cyberpunk-teal text-sm font-medium uppercase tracking-wider mb-4">How it works</p>
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-gradient mb-6 animate-neon-pulse">Expand Your Consciousness</h2>
+          <p className="text-cyberpunk-teal text-sm font-medium uppercase tracking-wider mb-4">Premium AI Web Tools Features</p>
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-gradient mb-6 animate-neon-pulse">
+            Why Choose Our AI Tools for Mind Expansion
+          </h2>
           <p className="text-muted-foreground text-lg md:text-xl max-w-3xl mx-auto leading-relaxed">
-            Alan Watts GPT combines advanced AI with timeless philosophical wisdom to create a unique mind-expanding experience.
+            AIWEBTOOLS.AI presents cutting-edge AI technology combined with timeless philosophical wisdom. 
+            Our AI web tools collection offers the most advanced artificial intelligence solutions for consciousness development and critical thinking.
           </p>
+          
+          {/* SEO-focused keyword section */}
+          <div className="mt-8 flex flex-wrap justify-center gap-4 text-sm">
+            <span className="px-3 py-1 bg-cyberpunk-teal/10 text-cyberpunk-teal rounded-full border border-cyberpunk-teal/20">
+              #1 AI Philosophy Tool
+            </span>
+            <span className="px-3 py-1 bg-cyberpunk-purple/10 text-cyberpunk-purple rounded-full border border-cyberpunk-purple/20">
+              Free AI Web Tools
+            </span>
+            <span className="px-3 py-1 bg-cyberpunk-pink/10 text-cyberpunk-pink rounded-full border border-cyberpunk-pink/20">
+              Advanced AI Technology
+            </span>
+            <span className="px-3 py-1 bg-cyberpunk-blue/10 text-cyberpunk-blue rounded-full border border-cyberpunk-blue/20">
+              AIWEBTOOLS.AI Premium
+            </span>
+          </div>
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
           {features.map((feature, index) => (
             <FeatureCard key={index} feature={feature} index={index} />
           ))}
+        </div>
+        
+        {/* Additional SEO content section */}
+        <div className="mt-16 text-center">
+          <div className="glass-card p-6 max-w-4xl mx-auto neon-border">
+            <h3 className="text-2xl font-bold text-white mb-4">
+              Leading AI Web Tools Platform - AIWEBTOOLS.AI
+            </h3>
+            <p className="text-muted-foreground leading-relaxed">
+              Discover why millions trust AIWEBTOOLS.AI for premium AI tools and artificial intelligence solutions. 
+              Our comprehensive collection of AI web tools includes philosophy AI, consciousness expansion tools, 
+              critical thinking enhancers, and advanced AI-powered analysis platforms. Join the AI revolution today!
+            </p>
+          </div>
         </div>
       </div>
     </section>

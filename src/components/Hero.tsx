@@ -38,11 +38,19 @@ const Hero = () => {
           <div>
             <Logo size="large" className="mb-8 animate-glow" />
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tighter text-gradient leading-tight max-w-4xl mx-auto mb-6 animate-neon-pulse">
-              Liberate Your Mind with Philosophical AI
+              AI Philosophy Tool - Liberate Your Mind with Alan Watts GPT
             </h1>
             <p className="text-xl md:text-2xl lg:text-3xl text-muted-foreground max-w-3xl mx-auto">
-              Explore various philosophical perspectives and engage in critical thinking exercises guided by Alan Watts' wisdom
+              Revolutionary AI web tool for philosophical exploration and critical thinking exercises. Powered by AIWEBTOOLS.AI - your premier destination for cutting-edge AI tools.
             </p>
+            
+            {/* SEO-optimized subheading */}
+            <div className="mt-6 text-lg text-cyberpunk-teal max-w-4xl mx-auto">
+              <p className="mb-2">🧠 <strong>Premium AI Tools</strong> | 🌟 <strong>Free AI Philosophy Tool</strong> | 🚀 <strong>AI Web Tools Collection</strong></p>
+              <p className="text-sm text-muted-foreground">
+                Explore consciousness, challenge conventional thinking, and expand your philosophical understanding with our advanced AI tool
+              </p>
+            </div>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full max-w-2xl mx-auto">
@@ -52,8 +60,9 @@ const Hero = () => {
               rel="noopener noreferrer"
               type="primary"
               className="w-full py-4 px-8 text-lg font-semibold rounded-xl neon-border shine-effect transform transition-all duration-300 hover:scale-105"
+              aria-label="Try Alan Watts GPT - Free AI Philosophy Tool"
             >
-              Try Alan Watts GPT <ArrowRight className="ml-2 h-5 w-5" />
+              Try This AI Tool Free <ArrowRight className="ml-2 h-5 w-5" />
             </AnimatedButton>
             <AnimatedButton 
               href="https://www.aiwebtools.ai" 
@@ -61,8 +70,9 @@ const Hero = () => {
               rel="noopener noreferrer"
               type="outline"
               className="w-full py-4 px-8 text-lg font-semibold rounded-xl neon-border transform transition-all duration-300 hover:scale-105"
+              aria-label="Explore More AI Web Tools at AIWEBTOOLS.AI"
             >
-              Discover More AI Tools
+              More AI Web Tools
             </AnimatedButton>
           </div>
           
@@ -70,7 +80,7 @@ const Hero = () => {
             <div className="youtube-container relative">
               <iframe
                 ref={videoRef}
-                title="Alan Watts Video"
+                title="Alan Watts Philosophy - AI Tool Demo and Philosophy Insights"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
                 className="shadow-magical"
