@@ -65,7 +65,7 @@ const Hero = () => {
               Try This AI Tool Free <ArrowRight className="ml-2 h-5 w-5" />
             </AnimatedButton>
             <AnimatedButton 
-              href="https://www.aiwebtools.ai" 
+              href="https://aiwebtools.lovable.app/?via=aiwebtools" 
               target="_blank" 
               rel="noopener noreferrer"
               type="outline"
