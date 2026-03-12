@@ -4,6 +4,8 @@ import Logo from './Logo';
 import AnimatedButton from './AnimatedButton';
 import { Mail, Phone, ChevronUp } from 'lucide-react';
 
+const AIWEBTOOLS_URL = "https://aiwebtools.lovable.app/?via=aiwebtools";
+
 const Footer = () => {
   const scrollToTop = () => {
     window.scrollTo({
@@ -29,9 +31,9 @@ const Footer = () => {
       </div>
       
       <div id="disclaimer" className="container mx-auto px-4 md:px-6 mb-16">
-        <div className="glass-card p-6 mb-16 animate-fade-in neon-border shine-effect">
-          <h3 className="text-2xl font-bold mb-4 text-white">Legal Disclaimer</h3>
-          <div className="text-muted-foreground space-y-4 text-sm">
+        <div className="glass-card p-4 sm:p-6 mb-16 animate-fade-in neon-border shine-effect">
+          <h3 className="text-xl sm:text-2xl font-bold mb-4 text-white">Legal Disclaimer</h3>
+          <div className="text-muted-foreground space-y-4 text-xs sm:text-sm">
             <p>
               Alan Watts GPT is an AI simulation inspired by the philosophical teachings of Alan Watts but is not affiliated with or endorsed by the estate of Alan Watts or any official Alan Watts organization. The views expressed by this AI do not necessarily reflect the actual views of Alan Watts.
             </p>
@@ -47,7 +49,7 @@ const Footer = () => {
           </div>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
           <div className="space-y-4">
             <Logo size="medium" />
             <p className="text-muted-foreground text-sm">
@@ -93,7 +95,7 @@ const Footer = () => {
               </li>
               <li>
                 <AnimatedButton 
-                  href="https://www.aiwebtools.ai" 
+                  href={AIWEBTOOLS_URL}
                   target="_blank" 
                   rel="noopener noreferrer"
                   type="ghost"
@@ -155,14 +157,14 @@ const Footer = () => {
             <h4 className="text-white font-medium mb-4">Contact</h4>
             <ul className="space-y-3">
               <li className="flex items-center">
-                <Phone className="h-4 w-4 mr-2 text-cyberpunk-teal" />
-                <a href="tel:4758008096" className="text-muted-foreground hover:text-white transition-colors">
+                <Phone className="h-4 w-4 mr-2 text-cyberpunk-teal flex-shrink-0" />
+                <a href="tel:4758008096" className="text-muted-foreground hover:text-white transition-colors text-sm">
                   (475) 800-8096
                 </a>
               </li>
               <li className="flex items-center">
-                <Mail className="h-4 w-4 mr-2 text-cyberpunk-teal" />
-                <a href="mailto:Contact@ai-webtools.com" className="text-muted-foreground hover:text-white transition-colors">
+                <Mail className="h-4 w-4 mr-2 text-cyberpunk-teal flex-shrink-0" />
+                <a href="mailto:Contact@ai-webtools.com" className="text-muted-foreground hover:text-white transition-colors text-sm break-all">
                   Contact@ai-webtools.com
                 </a>
               </li>
@@ -170,10 +172,10 @@ const Footer = () => {
           </div>
         </div>
         
-        <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center">
-          <p className="text-muted-foreground text-sm">
+        <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+          <p className="text-muted-foreground text-sm text-center md:text-left">
             <a 
-              href="https://www.aiwebtools.ai" 
+              href={AIWEBTOOLS_URL}
               target="_blank" 
               rel="noopener noreferrer"
               className="hover:text-white transition-colors"
@@ -182,17 +184,17 @@ const Footer = () => {
             </a>
           </p>
           
-          <div className="mt-4 md:mt-0 flex items-center space-x-4">
+          <div className="flex items-center space-x-4">
             <button 
               onClick={scrollToTop}
-              className="p-2 rounded-full bg-cyberpunk-teal/10 text-cyberpunk-teal hover:bg-cyberpunk-teal/20 transition-colors animate-pulse"
+              className="p-2 rounded-full bg-cyberpunk-teal/10 text-cyberpunk-teal hover:bg-cyberpunk-teal/20 transition-colors animate-pulse touch-manipulation"
               aria-label="Scroll to top"
             >
               <ChevronUp className="h-5 w-5" />
             </button>
             
             <AnimatedButton 
-              href="https://www.aiwebtools.ai" 
+              href={AIWEBTOOLS_URL}
               target="_blank" 
               rel="noopener noreferrer"
               type="primary"
