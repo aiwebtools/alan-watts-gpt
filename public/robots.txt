@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://alanwattsgpt.lovable.app/sitemap.xml
